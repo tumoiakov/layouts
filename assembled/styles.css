@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --background: #000;
+  --color: #fff;
+  --primary-color: #7cba72;
+  --secondary-color: #40ab7e;
+  --tertiary-color: #247a70;
+  --quaternary-color: #0c4c5a;
+
+  font-size: 17px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #000;
+    --color: #000;
+    --font-family: 000;
+    --font-size: 000;
+    --font-weight: 000;
+  }
+}
+
+body {
+  background: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  --background: #0e1220;
+
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Info message section */
+.info {
+  font-size: 0.824rem;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: #000;
+}
+
+.info__icon.arrow-icon {
+  background: #000;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.arrow-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  -webkit-mask: no-repeat center / cover url("/assets/arrow-right.svg");
+  mask: no-repeat center / cover url("/assets/arrow-right.svg");
+  box-shadow: 0 14px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+/* Header section */
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  font-size: 0.824rem;
+}
+
+.header__content-right {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 135px;
+}
+
+.header__content-right nav menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__content-right nav menu li {
+  padding: 0.471rem 0.941rem;
+}
+
+.login {
+  margin: 0.941rem 0 0.941rem 0.824rem;
+  padding: 0.588rem 2.824rem;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: var(--background);
+  border-radius: 1.765rem;
+}
+
+.login:hover {
+  background-color: color-mix(in srgb, var(--secondary-color) 30%, transparent);
+}
+
+.login:active {
+  background-color: color-mix(in srgb, var(--secondary-color) 60%, transparent);
+}
+
+.demo {
+  margin: 0.941rem 0 0.941rem 0.824rem;
+  padding: 0.588rem 1.176rem;
+  border: 2px solid var(--primary-color);
+  color: #000;
+  background-color: var(--primary-color);
+  border-radius: 1.765rem;
+}
+
+.demo:hover {
+  background-color: color-mix(in srgb, var(--primary-color) 90%, transparent);
+}
+
+.demo:active {
+  background-color: color-mix(in srgb, var(--primary-color) 70%, transparent);
+}
