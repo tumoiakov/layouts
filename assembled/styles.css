@@ -28,6 +28,9 @@ body {
   background: var(--background);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -42,6 +45,7 @@ button {
 .header {
   --background: #0e1220;
 
+  width: 100%;
   background-color: var(--background);
   display: flex;
   flex-direction: column;
@@ -169,6 +173,8 @@ button {
 .home__decoration {
   position: absolute;
   display: block;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
 }
 
 .home__decoration.first {
@@ -178,8 +184,6 @@ button {
   top: 6px;
   left: -56px;
   z-index: 1;
-  border: 2px solid var(--border-color);
-  box-shadow: 0 4px 0 0 var(--border-color);
 }
 
 .home__decoration.second {
@@ -189,8 +193,6 @@ button {
   top: 50px;
   left: 342px;
   z-index: 2;
-  border: 2px solid var(--border-color);
-  box-shadow: 0 4px 0 0 var(--border-color);
 }
 
 .home__title {
@@ -259,4 +261,78 @@ button {
 
 .case-scroll__icon {
   margin-left: 1rem;
+}
+
+/* Forecast section */
+
+.forecast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-top: 130px;
+}
+
+.forecast__content {
+  width: 330px;
+}
+
+.section__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.529rem;
+  font-weight: 700;
+  margin: 0 0 1.235rem;
+}
+
+.section__description {
+  font-weight: 700;
+  margin: 0;
+  max-width: 300px;
+}
+
+.forecast__visual {
+  position: relative;
+}
+
+.visual,
+.visual__decoration {
+  width: 583px;
+  height: 430px;
+}
+
+.visual {
+  --visual-background: #191d2c;
+
+  background: var(--visual-background);
+  position: relative;
+  z-index: 4;
+}
+
+.visual__decoration {
+  position: absolute;
+  display: block;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
+}
+
+.visual__decoration.first {
+  top: 24px;
+  left: 24px;
+  background: var(--secondary-color);
+  z-index: 3;
+}
+
+.visual__decoration.second {
+  top: 16px;
+  left: 16px;
+  background: var(--tertiary-color);
+  z-index: 2;
+}
+
+.visual__decoration.third {
+  top: 8px;
+  left: 8px;
+  background: var(--quaternary-color);
+  z-index: 1;
 }
