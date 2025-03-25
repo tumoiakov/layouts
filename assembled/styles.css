@@ -7,6 +7,7 @@
   --secondary-color: #40ab7e;
   --tertiary-color: #247a70;
   --quaternary-color: #0c4c5a;
+  --border-color: #0e1220;
 
   font-size: 17px;
   font-family: "IBM Plex Sans", sans-serif;
@@ -32,6 +33,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  cursor: pointer;
 }
 
 .header {
@@ -131,4 +136,127 @@ a {
 
 .demo:active {
   background-color: color-mix(in srgb, var(--primary-color) 70%, transparent);
+}
+
+/* Home section */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2.353rem;
+}
+
+.home__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: #000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 496px;
+  background: var(--secondary-color);
+  padding: 95px 162px;
+  z-index: 3;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
+}
+
+.home__decoration {
+  position: absolute;
+  display: block;
+}
+
+.home__decoration.first {
+  background: var(--primary-color);
+  width: 733px;
+  height: 544px;
+  top: 6px;
+  left: -56px;
+  z-index: 1;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
+}
+
+.home__decoration.second {
+  background: var(--tertiary-color);
+  width: 717px;
+  height: 520px;
+  top: 50px;
+  left: 342px;
+  z-index: 2;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 0 0 var(--border-color);
+}
+
+.home__title {
+  display: block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 3.882rem;
+  margin: 0 0 30px;
+}
+
+.home__description {
+  text-align: center;
+  font-size: 1.235rem;
+}
+
+.home__demo {
+  margin: 0 auto;
+  margin-top: 20px;
+  background: var(--primary-color);
+  padding: 19px 33px 27px;
+  border: 2px solid var(--border-color);
+  border-radius: 60px;
+  box-shadow: 0 4px 0 0 var(--border-color);
+  font-size: 1.235rem;
+}
+
+.home__funders {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.home__funders img {
+  height: 40px;
+  max-width: 194px;
+  object-fit: contain;
+}
+.home__funders img:first-child {
+  margin-top: -10px;
+}
+
+.home__funders img:last-child {
+  margin-top: -15px;
+  height: 35px;
+}
+
+.case-scroll {
+  margin-top: 100px;
+  border: none;
+  background: transparent;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.235rem;
+}
+
+.case-scroll:hover {
+  opacity: 0.7;
+}
+
+.case-scroll:active {
+  color: var(--secondary-color);
+}
+
+.case-scroll__icon {
+  margin-left: 1rem;
 }
