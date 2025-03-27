@@ -356,6 +356,8 @@ button {
   left: 8px;
 }
 
+/* Timeline section */
+
 .timeline {
   position: relative;
   display: flex;
@@ -364,7 +366,7 @@ button {
   text-align: center;
   justify-content: space-between;
   max-width: 1000px;
-  margin-top: 130px;
+  margin-top: 160px;
 }
 
 .timeline__title {
@@ -428,4 +430,44 @@ button {
   -webkit-mask: no-repeat center / cover url("./assets/ok.svg");
   mask: no-repeat center / cover url("./assets/ok.svg");
   margin-right: 10px;
+}
+
+/* Command section */
+
+.command {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-top: 167px;
+}
+
+.command__content {
+  width: 340px;
+}
+
+.command__description {
+  max-width: 285px;
+}
+
+.command__visual .visual,
+.command__visual .visual__decoration {
+  width: 560px;
+  height: 378px;
+}
+
+.command__visual .visual__decoration.first {
+  top: -4px;
+  left: -2px;
+}
+
+.command__visual .visual__decoration.second {
+  top: -12px;
+  left: 8px;
+}
+
+.command__visual .visual__decoration.third {
+  top: -20px;
+  left: 16px;
 }
