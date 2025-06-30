@@ -53,6 +53,13 @@ button {
   align-items: center;
 }
 
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+
 /* Info message section */
 .info {
   font-size: 0.824rem;
@@ -146,12 +153,8 @@ button {
 /* Home section */
 
 .home {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
   padding-top: 2.353rem;
 }
 
@@ -267,11 +270,8 @@ button {
 /* Forecast section */
 
 .forecast {
-  position: relative;
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1000px;
   margin-top: 130px;
 }
 
@@ -359,13 +359,10 @@ button {
 /* Timeline section */
 
 .timeline {
-  position: relative;
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  max-width: 1000px;
   margin-top: 160px;
 }
 
@@ -435,11 +432,8 @@ button {
 /* Command section */
 
 .command {
-  position: relative;
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1000px;
   margin-top: 167px;
 }
 
@@ -470,4 +464,23 @@ button {
 .command__visual .visual__decoration.third {
   top: -20px;
   left: 16px;
+}
+
+/* Team section */
+
+.team {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 167px;
+  flex-direction: column;
+}
+
+.team_visual {
+  display: flex;
+  position: relative;
+}
+
+.team__visual > .visual {
+  width: 403px;
+  height: 295px;
 }
