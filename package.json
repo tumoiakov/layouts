@@ -1,0 +1,16 @@
+{
+  "name": "layouts",
+  "version": "1.0.0",
+  "description": "Various layouts created for the purpose of studying",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.41.0",
+    "@html-eslint/parser": "^0.41.0",
+    "eslint": "^9.29.0"
+  }
+}
