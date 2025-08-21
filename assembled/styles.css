@@ -312,9 +312,6 @@ button {
 }
 
 .visual {
-  --visual-background: #191d2c;
-
-  background: var(--visual-background);
   position: relative;
   z-index: 4;
 }
@@ -470,17 +467,84 @@ button {
 
 .team {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 167px;
   flex-direction: column;
 }
 
-.team_visual {
-  display: flex;
+.team__content {
+  max-width: 580px;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.team__visual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.75rem;
   position: relative;
 }
 
-.team__visual > .visual {
+.team__visual figure {
+  position: relative;
+  z-index: 4;
+  margin: 0;
+}
+
+.team__visual figure img {
   width: 403px;
   height: 295px;
+}
+
+.team__visual .visual__caption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.team__visual .visual__caption-icon {
+  display: inline-block;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 1rem;
+  background: url("./assets/slack-logo.png") no-repeat center / cover;
+}
+
+.team__visual .visual:first-child .visual__caption-icon {
+  background: url("./assets/gcalendar.png") no-repeat center / cover;
+}
+
+.team__visual .visual__decoration {
+  width: 490px;
+  height: 295px;
+}
+
+.team__visual .visual:first-child .visual__decoration.first {
+  top: 74px;
+  left: -24px;
+}
+
+.team__visual .visual:first-child .visual__decoration.second {
+  top: 66px;
+  left: -16px;
+}
+
+.team__visual .visual:first-child .visual__decoration.third {
+  top: 58px;
+  left: -8px;
+}
+
+.team__visual .visual__decoration.first {
+  top: 74px;
+  left: 24px;
+}
+
+.team__visual .visual__decoration.second {
+  top: 66px;
+  left: 16px;
+}
+
+.team__visual .visual__decoration.third {
+  top: 58px;
+  left: 8px;
 }
