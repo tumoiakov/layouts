@@ -31,7 +31,7 @@
             </menu>
           </nav>
           <button class="login" type="button">Sign In</button>
-          <button class="demo" type="button">Request demo</button>
+          <button class="header__demo" type="button">Request demo</button>
         </div>
       </div>
     </header>
@@ -42,7 +42,7 @@
           <p class="home__description">
             The first and last workforce management platform you'll need.
           </p>
-          <button class="home__demo" type="button">Request demo</button>
+          <button class="home__demo demo" type="button">Request demo</button>
         </div>
         <div class="home__decoration first"></div>
         <div class="home__decoration second"></div>
@@ -201,7 +201,32 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe section"></section>
+      <section class="request section">
+        <h2 class="request__title">Get staffing right.</h2>
+        <button class="request__demo demo">Request demo</button>
+      </section>
+      <section class="subscribe section">
+        <form>
+          <div class="subscribe__info">
+            <h2 class="subscribe__title">Want to stay in touch?</h2>
+            <label class="subscribe__label" for="subscribe__input"
+              >Leave your email and we'll send updates and content from our
+              blog.</label
+            >
+          </div>
+          <div class="subscribe__action">
+            <input
+              id="subscribe__input"
+              class="subscribe__input"
+              type="email"
+              placeholder="tumoyakov.work@outlook.com"
+            />
+            <button class="subscribe__button" type="submit">
+              Stay in touch
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>
